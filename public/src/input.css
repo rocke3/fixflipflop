@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+	padding: 4rem 0;
+}
+.containe {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: 1366px;
+	margin: auto;
+}
+.alt {
+	@apply bg-orange-50;
+}
+
+.btn-primary {
+	@apply bg-orange-400 rounded shadow px-6 py-2 text-white hover:shadow-lg hover:bg-orange-500;
+	transition: 0.3s all;
+}
+
+.title {
+	@apply text-orange-400 text-3xl font-bold tracking-tight sm:text-4xl text-center mb-8;
+}
+.title h2 {
+	@apply inline-block relative;
+}
+.section:hover .title h2:after {
+	left: calc(50% - 25px);
+}
+.title h2:after {
+	@apply bg-orange-400 absolute left-0 bottom-[-12px];
+	content: "";
+	height: 5px;
+	width: 50px;
+	transition: 0.3s all;
+}

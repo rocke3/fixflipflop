@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<title>Fixflipflop</title>
+	</head>
+	<body>
+		<!-- Banner Section -->
+		<div class="bg-white min-h-screen bg-fixed" style="background-image: url('./img/bg.png')">
+			<div class="bg-white bg-opacity-60 min-h-screen">
+				<header class="absolute inset-x-0 top-0 z-50 bg-orange-400 drop-shadow-md">
+					<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+						<div class="flex lg:flex-1">
+							<a href="#" class="-m-1.5 p-1.5 text-white font-bold">
+								<span class="sr-only">FixFlipFlop</span>
+								FixFlipFlop
+							</a>
+						</div>
+						<div class="flex lg:hidden">
+							<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+								<span class="sr-only">Open main menu</span>
+								<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</div>
+						<div class="hidden lg:flex lg:gap-x-12">
+							<a href="#" class="text-sm font-semibold leading-6 text-white">Product</a>
+							<a href="#" class="text-sm font-semibold leading-6 text-white">Features</a>
+							<a href="#" class="text-sm font-semibold leading-6 text-white">Marketplace</a>
+							<a href="#" class="text-sm font-semibold leading-6 text-white">Company</a>
+						</div>
+					</nav>
+					<!-- Mobile menu, show/hide based on menu open state. -->
+					<div class="hidden" role="dialog" aria-modal="true">
+						<!-- Background backdrop, show/hide based on slide-over state. -->
+						<div class="fixed inset-0 z-50"></div>
+						<div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+							<div class="flex items-center justify-between">
+								<a href="#" class="-m-1.5 p-1.5">
+									<span class="sr-only">Your Company</span>
+									<img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+								</a>
+								<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+									<span class="sr-only">Close menu</span>
+									<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+									</svg>
+								</button>
+							</div>
+							<div class="mt-6 flow-root">
+								<div class="-my-6 divide-y divide-gray-500/10">
+									<div class="space-y-2 py-6">
+										<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+										<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+										<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+										<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+									</div>
+									<div class="py-6">
+										<a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="pt-16 containe">
+					<div class="grid grid-cols-2 gap-6">
+						<div class="col-span-2 sm:col-span-1">
+							<div class="text-center py-20 sm:py-24 text-dark font-semibold">
+								<h1 class="text-2xl font-bold tracking-tight sm:text-4xl">Fix Flip Flop</h1>
+								<h2 class="mt-2 text-lg leading-2">360° Remote Review and Oversight</h2>
+								<p class="mt-5 text-lg leading-8">Utilize cutting-edge 360° cameras to monitor construction progress remotely, providing detailed oversight and guidance to on-site teams, ensuring accountability and precision.</p>
+								<div class="mt-10 flex items-center justify-center gap-x-6">
+									<a href="#" class="text-sm font-semibold leading-6">Learn more <span aria-hidden="true">→</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-span-2 sm:col-span-1">
+							<iframe
+								class="w-full aspect-video sm:mt-24 mb-8"
+								src="https://www.youtube.com/embed/_InvLUIDSsU?si=UFsOWIW7Fhyim21H"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- About Section -->
+		<div class="section">
+			<div class="containe">
+				<div class="title">
+					<h2>Introduction</h2>
+				</div>
+				<div class="grid grid-cols-2 gap-8 pt-10">
+					<div class="col-span-2 sm:col-span-1">
+						<img src="./img/img1.png" />
+					</div>
+					<div class="col-span-2 sm:col-span-1">
+						<p class="mt-5 text-lg leading-8">Utilize cutting-edge 360° cameras to monitor construction progress remotely, providing detailed oversight and guidance to on-site teams, ensuring accountability and precision.</p>
+					</div>
+				</div>
+				<div class="text-center mt-10">
+					<button class="btn-primary">Get Offer</button>
+				</div>
+
+				<div class="grid grid-cols-3 gap-4 text-center mt-8">
+					<div class="col-span-3 sm:col-span-1">
+						<h3 class="text-3xl sm:text-4xl font-bold text-orange-400">1,697</h3>
+						<p class="mt-2 font-semibold text-xl">Offers Made</p>
+					</div>
+					<div class="col-span-3 sm:col-span-1">
+						<h3 class="text-3xl sm:text-4xl font-bold text-orange-400">100%</h3>
+						<p class="mt-2 font-semibold text-xl">Satisfied Customers</p>
+					</div>
+					<div class="col-span-3 sm:col-span-1">
+						<h3 class="text-3xl sm:text-4xl font-bold text-orange-400">289</h3>
+						<p class="mt-2 font-semibold text-xl">Houses Bought</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Founder -->
+		<div class="section alt">
+			<div class="containe">
+				<div class="title">
+					<h2>Founder's Bio and Vision</h2>
+				</div>
+				<p class="text-center mb-8">
+					Meet Your Contracting Partner: Our founder, a seasoned professional in construction and finance, began his real estate journey at the age of 19 by rehabbing and renting his first property. His rapid ascent in residential and commercial
+					construction, coupled with extensive experience in mortgage lending and investing, has shaped him into a powerful leader and visionary for our unique enterprise. Connect on LinkedIn [here](https://www.linkedin.com).
+				</p>
+				<div class="mx-auto lg:max-w-5xl">
+					<ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-16 xl:col-span-2 justify-center">
+						<li>
+							<div class="flex items-center gap-x-6">
+								<img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+								<div>
+									<h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
+									<p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="flex items-center gap-x-6">
+								<img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+								<div>
+									<h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
+									<p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="flex items-center gap-x-6">
+								<img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+								<div>
+									<h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
+									<p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Promise -->
+		<div class="bg-white">
+			<div class="relative isolate px-6 lg:px-8">
+				<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+					<div
+						class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+						style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+					></div>
+				</div>
+				<div class="mx-auto max-w-2xl py-14">
+					<div class="text-center">
+						<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Our Promise</h1>
+						<p class="mt-6 text-lg leading-8 text-gray-600">
+							No longer flop on your investment rehabs. Let's fix, flip, and make it a success. Partner with a leader who has built a proven track record of transforming challenges into profitable opportunities.
+						</p>
+						<div class="mt-10 flex items-center justify-center gap-x-6">
+							<a href="#" class="btn-primary">Get started</a>
+						</div>
+					</div>
+				</div>
+				<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+					<div
+						class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+						style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+					></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section bg-purple-200">
+			<div class="containe">
+				<div class="title">
+					<h2>Investor Partnership</h2>
+				</div>
+				<p class="text-center">By partnering with us, investors can focus on acquisition and ownership roles while we handle all aspects of construction management, ensuring a smooth, efficient, and successful project completion.</p>
+				<div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+					<img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48" />
+					<img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48" />
+					<img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48" />
+					<img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48" />
+					<img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48" />
+				</div>
+			</div>
+		</div>
+
+		<div class="containe section">
+			<div class="title">
+				<h2>Rehab Project Lifecycle Management</h2>
+			</div>
+			<div class="">
+				<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+					<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+						<div class="relative pl-16">
+							<dt class="text-base font-semibold leading-7 text-gray-900">
+								<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-400">
+									<svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="1.13em" height="1em" viewBox="0 0 576 512">
+										<path
+											fill="currentColor"
+											d="m271.06 144.3l54.27 14.3a8.59 8.59 0 0 1 6.63 8.1c0 4.6-4.09 8.4-9.12 8.4h-35.6a30 30 0 0 1-11.19-2.2c-5.24-2.2-11.28-1.7-15.3 2l-19 17.5a11.68 11.68 0 0 0-2.25 2.66a11.42 11.42 0 0 0 3.88 15.74a83.77 83.77 0 0 0 34.51 11.5V240c0 8.8 7.83 16 17.37 16h17.37c9.55 0 17.38-7.2 17.38-16v-17.6c32.93-3.6 57.84-31 53.5-63c-3.15-23-22.46-41.3-46.56-47.7l-54.27-14.3a8.59 8.59 0 0 1-6.63-8.1c0-4.6 4.09-8.4 9.12-8.4h35.6A30 30 0 0 1 332 83.1c5.23 2.2 11.28 1.7 15.3-2l19-17.5a11.31 11.31 0 0 0 2.17-2.6a11.43 11.43 0 0 0-3.84-15.78a83.82 83.82 0 0 0-34.52-11.5V16c0-8.8-7.82-16-17.37-16h-17.37C285.82 0 278 7.2 278 16v17.6c-32.89 3.6-57.85 31-53.51 63c3.14 23 22.51 41.3 46.57 47.7m294.21 183.8c-11.8-10.7-30.2-10-42.6 0l-92.4 73.9a63.64 63.64 0 0 1-40 14H272a16 16 0 0 1 0-32h78.29c15.9 0 30.71-10.9 33.25-26.6a31.2 31.2 0 0 0 .46-5.46A32 32 0 0 0 352 320H192a117.66 117.66 0 0 0-74.1 26.29L71.4 384H16a16 16 0 0 0-16 16v96a16 16 0 0 0 16 16h356.77a64 64 0 0 0 40-14L564 377a32 32 0 0 0 1.28-48.9Z"
+										/>
+									</svg>
+								</div>
+								Cost Analysis
+							</dt>
+							<dd class="mt-2 text-base leading-7 text-gray-600">Detailed assessment of labor and materials, identifying necessary expenditures and potential hidden costs.</dd>
+						</div>
+						<div class="relative pl-16">
+							<dt class="text-base font-semibold leading-7 text-gray-900">
+								<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-400">
+									<svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+									</svg>
+								</div>
+								Proposal and Estimate Acquisition
+							</dt>
+							<dd class="mt-2 text-base leading-7 text-gray-600">Gathering comprehensive proposals from 2 to 5 subcontractors per trade, ensuring competitive and accurate pricing.</dd>
+						</div>
+						<div class="relative pl-16">
+							<dt class="text-base font-semibold leading-7 text-gray-900">
+								<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-400">
+									<svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+										<g fill="none">
+											<path d="M0 0h24v24H0z" />
+											<path
+												fill="currentColor"
+												d="m3.713 11.163l2.678 1.804c1.006.678.334 2.247-.85 1.987l-1.064-.234a8.002 8.002 0 0 0 14.804.605a1 1 0 0 1 1.82.828c-1.987 4.37-6.896 6.793-11.687 5.509A10.003 10.003 0 0 1 2 12.08c-.007-.903.996-1.402 1.713-.918M12 6a1 1 0 0 1 .993.883L13 7v1h2a1 1 0 0 1 .117 1.993L15 10h-5a.5.5 0 0 0-.09.992L10 11h4a2.5 2.5 0 0 1 .164 4.995L14 16h-1v1a1 1 0 0 1-1.993.117L11 17v-1H9a1 1 0 0 1-.117-1.993L9 14h5a.5.5 0 0 0 .09-.992L14 13h-4a2.5 2.5 0 0 1-.164-4.995L10 8h1V7a1 1 0 0 1 1-1m2.59-3.657a10.002 10.002 0 0 1 7.414 9.581c.007.903-.995 1.402-1.712.918l-2.678-1.804c-1.007-.678-.335-2.247.85-1.987l1.063.234A8.002 8.002 0 0 0 4.723 8.68a1 1 0 1 1-1.82-.828C4.89 3.482 9.8 1.06 14.59 2.343"
+											/>
+										</g>
+									</svg>
+								</div>
+								Trade Management
+							</dt>
+							<dd class="mt-2 text-base leading-7 text-gray-600">Scheduling, contract enforcement, and payment structuring, including lien waivers and retention to ensure contractor commitment and legal compliance.</dd>
+						</div>
+						<div class="relative pl-16">
+							<dt class="text-base font-semibold leading-7 text-gray-900">
+								<div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-400">
+									<svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"
+										/>
+									</svg>
+								</div>
+								On-site vs. Off-site Management
+							</dt>
+							<dd class="mt-2 text-base leading-7 text-gray-600">90% of project management is executed remotely, with the remaining 10% handled on-site by trades, leveraging our oversight to ensure quality and adherence to deadlines.</dd>
+						</div>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Us Section-->
+		<div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 section alt">
+			<div class="title">
+				<h2>Contact Us</h2>
+			</div>
+			<form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+				<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+					<div>
+						<label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+						<div class="mt-2.5">
+							<input
+								type="text"
+								name="first-name"
+								id="first-name"
+								autocomplete="given-name"
+								class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
+					<div>
+						<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+						<div class="mt-2.5">
+							<input
+								type="text"
+								name="last-name"
+								id="last-name"
+								autocomplete="family-name"
+								class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
+					<div class="sm:col-span-2">
+						<label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+						<div class="mt-2.5">
+							<input
+								type="text"
+								name="company"
+								id="company"
+								autocomplete="organization"
+								class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
+					<div class="sm:col-span-2">
+						<label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+						<div class="mt-2.5">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								autocomplete="email"
+								class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
+					<div class="sm:col-span-2">
+						<label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+						<div class="relative mt-2.5">
+							<div class="absolute inset-y-0 left-0 flex items-center">
+								<label for="country" class="sr-only">Country</label>
+								<select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+									<option>US</option>
+									<option>CA</option>
+									<option>EU</option>
+								</select>
+								<svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+								</svg>
+							</div>
+							<input
+								type="tel"
+								name="phone-number"
+								id="phone-number"
+								autocomplete="tel"
+								class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
+					<div class="sm:col-span-2">
+						<label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+						<div class="mt-2.5">
+							<textarea
+								name="message"
+								id="message"
+								rows="4"
+								class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							></textarea>
+						</div>
+					</div>
+					<div class="flex gap-x-4 sm:col-span-2">
+						<div class="flex h-6 items-center">
+							<!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+							<button
+								type="button"
+								class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+								role="switch"
+								aria-checked="false"
+								aria-labelledby="switch-1-label"
+							>
+								<span class="sr-only">Agree to policies</span>
+								<!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+								<span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+							</button>
+						</div>
+						<label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+							By selecting this, you agree to our
+							<a href="#" class="font-semibold text-orange-600">privacy&nbsp;policy</a>.
+						</label>
+					</div>
+				</div>
+				<div class="mt-10">
+					<button
+						type="submit"
+						class="block w-full rounded-md bg-orange-400 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-orange-500"
+					>
+						Let's talk
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- Footer -->
+
+		<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+					<div class="max-w-xl lg:max-w-lg">
+						<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+						<p class="mt-4 text-lg leading-8 text-gray-300">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+						<div class="mt-6 flex max-w-md gap-x-4">
+							<label for="email-address" class="sr-only">Email address</label>
+							<input
+								id="email-address"
+								name="email"
+								type="email"
+								autocomplete="email"
+								required
+								class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+								placeholder="Enter your email"
+							/>
+							<button
+								type="submit"
+								class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+							>
+								Subscribe
+							</button>
+						</div>
+					</div>
+					<dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+						<div class="flex flex-col items-start">
+							<div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+								<svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+									/>
+								</svg>
+							</div>
+							<dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+							<dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+						</div>
+						<div class="flex flex-col items-start">
+							<div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+								<svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002"
+									/>
+								</svg>
+							</div>
+							<dt class="mt-4 font-semibold text-white">No spam</dt>
+							<dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+						</div>
+					</dl>
+				</div>
+			</div>
+			<div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+				<div
+					class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+					style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+				></div>
+			</div>
+		</div>
+	</body>
+</html>
