@@ -1,6 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
+$to = "mail@mdrashid.com";
 $to = "Contact@prestigegroupconstruction.com";
 $subject = "Fixflipflop - Contact";
 
@@ -15,7 +16,11 @@ if($data && $user) {
   $email = $user['email'];
   $phone = $user['phone'];
   $property = $user['property'];
-  $reason = $user['reason'];
+  $rehab = $user['rehab'];
+  $current = $user['current'];
+  $post = $user['post'];
+  $budget = $user['budget'];
+  $status = $user['status'];
   
   $message = "
   <html>
@@ -26,29 +31,31 @@ if($data && $user) {
   <p>This email submitted from Fixflipflop.com</p>
   <table style='text-align:left;'>
     <tr>
-      <th>Name</th>
-      <th>:</th>
-      <td>$name</td>
+      <th>Name</th><th>:</th><td>$name</td>
     </tr>
     <tr>
-      <th>Email</th>
-      <th>:</th>
-      <td>$email</td>
+      <th>Email</th><th>:</th><td>$email</td>
     </tr>
     <tr>
-      <th>Phone Number</th>
-      <th>:</th>
-      <td>$phone</td>
+      <th>Phone Number</th><th>:</th><td>$phone</td>
     </tr>
     <tr>
-      <th>Property Address</th>
-      <th>:</th>
-      <td>$property</td>
+      <th>Property Address</th><th>:</th><td>$property</td>
     </tr>
     <tr>
-      <th>Reason For Selling</th>
-      <th>:</th>
-      <td>$reason</td>
+      <th>Rehab work needed</th><th>:</th><td>$rehab</td>
+    </tr>
+    <tr>
+      <th>Estimate current value</th><th>:</th><td>$current</td>
+    </tr>
+    <tr>
+      <th>Estimated post rehab value</th><th>:</th><td>$post</td>
+    </tr>
+    <tr>
+      <th>Construction budget</th><th>:</th><td>$budget</td>
+    </tr>
+    <tr>
+      <th>Deal status</th><th>:</th><td>$status</td>
     </tr>
   </table>
   </body>
