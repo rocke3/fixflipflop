@@ -6,10 +6,8 @@
 	padding: 4rem 0;
 }
 .containe {
-	padding-left: 1rem;
-	padding-right: 1rem;
+	@apply px-2 md:px-4 lg:px-6 mx-auto;
 	max-width: 1366px;
-	margin: auto;
 }
 .alt {
 	@apply bg-orange-50;
